@@ -31,27 +31,40 @@
 
 ### **Създаване на променливи (в статичната и динамичната памет)**
  ```c++
+#include <iostream>
+
 int main()
 {
-	int a = 10; // int in the stack
-	int* ptr = new int(30); // int in the dyniamic memory
-                            // we use a pointer on the stack to point to the int
+    // 1️⃣ Stack allocation
+    int a = 10;                 // 'a' lives on the stack
 
-	// print the value of the int in the stack and the one in the heap
-	std::cout << "First number: " << a << " " << " second number: " << (*ptr) << std::endl;
-	
-	// ptr holds an address in the dynamic memory where the int is placed
-	std::cout << "Address of second number" << ptr << std::endl;
-	
-	delete ptr; // delete the int in the stack to prevent memory leak
-	
-	ptr = &a;   // redirect the pointer to int in the stack
-	std::cout << "Address of first number" << ptr << std::endl; // now ptr holds the address that is in the stack
-	
-	int& b = a; // creates int which data is on the address of a => they share the same memory
-	b = 30;
-	
-	std::cout << "First number" << a << std::endl // 30
+    // 2️⃣ Heap (dynamic) allocation
+    int* heapInt = new int(30); // int lives on the heap
+                                // pointer itself lives on the stack
+
+    // Print values
+    std::cout << "Stack value (a): " << a << '\n';
+    std::cout << "Heap value (*heapInt): " << *heapInt << '\n';
+
+    // Print addresses
+    std::cout << "Address of a (stack): " << &a << '\n';
+    std::cout << "Address of heap value: " << heapInt << '\n';
+
+    // 3️⃣ Clean up heap memory
+    delete heapInt;             // deletes HEAP memory (not stack!)
+    heapInt = nullptr;          // avoid dangling pointer
+
+    // 4️⃣ Pointer can point to stack memory
+    heapInt = &a;               // now points to stack variable 'a'
+    std::cout << "Pointer now points to a, value: " << *heapInt << '\n';
+
+    // 5️⃣ Reference example
+    int& ref = a;               // ref is an alias for 'a'
+    ref = 50;                   // modifies 'a'
+
+    std::cout << "a after reference change: " << a << '\n';
+
+    return 0;
 }
  ```
 
