@@ -13,12 +13,12 @@
 
 **Материали**
 
-1) learnCPP.com - най-добрият ресурс за С++ - съдържа темите с подробности подходящ за всяко ниво
+1) learnCPP.com - най-добрият ресурс за С++ - съдържа темите с подробности, подходящ за всяко ниво - препоръчва се за подготовка за контролни/изпит.
 
 2) cppreference.com - съдържа последна версия на материалите на езика
 
 3) “A Tour of C++” – Bjarne Stroustrup
 
-4) “C++ Primer” 
+4) “C++ Primer” - Barbara E. Moo, Josée Lajoie, and Stanley B. Lippman
 
 5) Youtube videos - The Cherno, Mike Shah
