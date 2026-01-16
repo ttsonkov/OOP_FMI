@@ -17,7 +17,7 @@
 12. Ключова дума virtual. Статично и динамично свързване. Виртуални функции. Ключови думи - override, final. Виртуални таблици. Полиморфизъм - runtime and compile time. Пример.
 13. Абстрактни класове и интерфейси. Pure virtual functions. Object slicing, type casts. Type Erasure (std::function, C++ 11). Сравнение с езика Java.
 14. Множествено наследяване. Диамантен проблем. Колекции от обекти в полиморфна йерархия. Копиране и триене. Пример с класа Student.
-15. SOLID и Шаблони за дизайн. SOLID принципи. Примери за шаблони - singleton(C++ 11 or later), factory, adapter, strategy.
+15. SOLID и Шаблони за дизайн. SOLID принципи. Примери за шаблони - singleton(C++ 11), factory, adapter, strategy.
 
 
 **Оценяване** \
