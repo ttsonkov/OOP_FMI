@@ -46,6 +46,6 @@
 
 1) learnCPP.com - изключително подходящ за целите на курса  - съдържа теми с подробности, подходящ за всяко ниво - препоръчва се за подготовка за контролни/изпит.
 2) cppreference.com - съдържа последна версия на документацията на езика, подходящ за референция
-3) “A Tour of C++” – Bjarne Stroustrup
-4) “C++ Primer” - Barbara E. Moo, Josée Lajoie, and Stanley B. Lippman
+3) https://federico-busato.github.io/Modern-CPP-Programming/ - подробен курс за езика С++
+4) “A Tour of C++” – Bjarne Stroustrup, “C++ Primer” - Barbara E. Moo, Josée Lajoie, and Stanley B. Lippman
 5) Youtube videos - The Cherno, Mike Shah
